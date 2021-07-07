@@ -28,6 +28,7 @@
     <script>
     function decryptThis(){
       decPlainTxtPwd = $('#pwBx').val();
+      console.log($('#pwBx').val());
       cryptMsg = "ggm3+NhM1DSanU4YUk2XZ/TZMDoWKUQ9uFRyYhIx";
       decIv = "YUcbSvRIKM0TTemKueceYQ==";
       decMode = "gcm";
@@ -47,7 +48,7 @@
       return false;
     };
     $('#pwBx').keyup(function() {
-      console.log('newtxt: ' + $('#pwBx').val());
+      //console.log('newtxt: ' + $('#pwBx').val());
       decryptThis();
       return false;
     });    
