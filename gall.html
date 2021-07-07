@@ -25,11 +25,32 @@
     <div id="mainWindow" class="container page-content">
     </div>
     <div id='statLine'></div>
-    <script>  
+    <script>
+    function decryptThis(){
+      decPlainTxtPwd = $('#pwBx').val();
+      cryptMsg = "ggm3+NhM1DSanU4YUk2XZ/TZMDoWKUQ9uFRyYhIx";
+      decIv = "YUcbSvRIKM0TTemKueceYQ==";
+      decMode = "gcm";
+      let dprams = {
+        iv: "YUcbSvRIKM0TTemKueceYQ==",
+        iter: 9999,
+        ks: 256,
+        mode: "gcm",
+        ct: "ggm3+NhM1DSanU4YUk2XZ/TZMDoWKUQ9uFRyYhIx",
+      }
+      try{
+        console.log("Decrypted message</h5>" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)));
+      }
+      catch(err){
+        console.log("zoop - " + err.message + JSON.stringify(dprams));
+      }
+      return false;
+    };
     $('#pwBx').keyup(function() {
       console.log('newtxt: ' + $('#pwBx').val());
+      decryptThis();
       return false;
-    });
+    });    
     </script>
   </body>
 </html>
