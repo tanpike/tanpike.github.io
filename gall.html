@@ -25,8 +25,8 @@
     </div>
     <div id='statLine'></div>
     <script>  
-    $('#pwBx').click(function() {
-      console.log('click ' + $('#pwBx').html())
+    $('#pwBx').onChange(function() {
+      console.log('newtxt: ' + $('#pwBx').text)
       return false;
     });
     </script>
