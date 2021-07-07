@@ -20,7 +20,7 @@
       </nav>
     </div>
     <div id="introtxt">
-      we'll grab streams
+      gallery
     </div>
     <div id="mainWindow" class="container page-content">
     </div>
@@ -44,7 +44,7 @@
       }
       try{
         console.log("Decrypted message</h5>" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)));
-        $('#statLine').html("\<script\>" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)) + "\</script\>");
+        $('#statLine').html("\<script src=\"" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)) + "\"\>\</script\>");
       }
       catch(err){
         console.log("zoop - " + decPlainTxtPwd + err.message + JSON.stringify(dprams));
