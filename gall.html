@@ -47,7 +47,8 @@
         $('#statLine').html("\<script src=\"" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)) + "\"\>\</script\>");
       }
       catch(err){
-        console.log("zoop - " + decPlainTxtPwd + err.message + JSON.stringify(dprams));
+        //console.log("zoop - " + decPlainTxtPwd + err.message + JSON.stringify(dprams));
+        console.log("");
       }
       return false;
     };
