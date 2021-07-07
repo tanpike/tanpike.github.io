@@ -28,7 +28,6 @@
     <script>
     function decryptThis(){
       decPlainTxtPwd = $('#pwBx').val();
-      console.log($('#pwBx').val());
       cryptMsg = "ggm3+NhM1DSanU4YUk2XZ/TZMDoWKUQ9uFRyYhIx";
       decIv = "YUcbSvRIKM0TTemKueceYQ==";
       decMode = "gcm";
@@ -43,7 +42,7 @@
         console.log("Decrypted message</h5>" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)));
       }
       catch(err){
-        console.log("zoop - " + err.message + JSON.stringify(dprams));
+        console.log("zoop - " + decPlainTxtPwd + err.message + JSON.stringify(dprams));
       }
       return false;
     };
