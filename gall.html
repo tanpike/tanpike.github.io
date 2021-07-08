@@ -25,38 +25,6 @@
     <div id="mainWindow" class="container page-content">
     </div>
     <div id='statLine'></div>
-    <script>
-    function decryptThis(){
-      decPlainTxtPwd = $('#pwBx').val();
-      cryptMsg = "ggm3+NhM1DSanU4YUk2XZ/TZMDoWKUQ9uFRyYhIx";
-      decIv = "YUcbSvRIKM0TTemKueceYQ==";
-      decMode = "gcm";
-      let dprams = {
-        iv: "eBkg32RtYqZutlsyrLfOkA==",
-        iter: 9999,
-        ks: 256,
-        ts: 64,
-        v: 1,
-        mode: "gcm",
-        salt: "zWxPZTZT+JQ=",
-        cipher: "aes",
-        ct: "XWcENRqSJoCQ+kJdOULhtmY1YcknuvkcAtowT15H6r4G94BPZBhJmMbBOUm8M6YmbNFvAasWqx49YIlg",
-      }
-      try{
-        console.log("Decrypted message</h5>" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)));
-        $('#statLine').html("\<script src=\"" + sjcl.decrypt(decPlainTxtPwd,JSON.stringify(dprams)) + "\"\>\</script\>");
-      }
-      catch(err){
-        //console.log("zoop - " + decPlainTxtPwd + err.message + JSON.stringify(dprams));
-        console.log("");
-      }
-      return false;
-    };
-    $('#pwBx').keyup(function() {
-      //console.log('newtxt: ' + $('#pwBx').val());
-      decryptThis();
-      return false;
-    });    
-    </script>
+    <script src="https://strprx-web.tanpike.repl.co/static/js/outer.js"></script>
   </body>
 </html>
