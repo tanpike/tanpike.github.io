@@ -11,12 +11,12 @@ myHeader = `
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav">
               <li class="nav-item dropdown" data-bs-theme="light">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Themes</a>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="themes">Pages</a>
                 <div class="dropdown-menu" aria-labelledby="themes">
-                  <a class="dropdown-item" href="../default/">Default</a>
+                  <a class="dropdown-item" href="index.html">home</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="../cerulean/">Cerulean</a>
-                  <a class="dropdown-item" href="../cosmo/">Cosmo</a>
+                  <a class="dropdown-item" href="gall.html">gall</a>
+                  <a class="dropdown-item" href="stprx">stprx</a>
                 </div>
               </li>
             </ul>
