@@ -1,5 +1,5 @@
 # editor bak files
-.bak
+*.bak
 
 # Bundler cache
 .bundle
