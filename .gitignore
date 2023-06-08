@@ -1,6 +1,9 @@
 # editor bak files
 *.bak
 
+#local environment
+local/
+
 # Bundler cache
 .bundle
 vendor
