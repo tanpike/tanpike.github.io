@@ -1,3 +1,6 @@
+# editor bak files
+.bak
+
 # Bundler cache
 .bundle
 vendor
