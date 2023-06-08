@@ -13,13 +13,30 @@
           <div class="col-lg-8 col-md-7 col-sm-6">
             <h1>Gall</h1>
             <p class="lead">This is the gallery</p>
-            <div class="container" id="innerc"></div>
+          </div>
+          <div class="container" id="innerc">
+            <div class="row row-cols-5" id="controls">
+              <div class="col"><a onclick="gimmeFive()"> gimme5 </a> <a onclick="getFaves()"> faves </a></div>
+              <div class="col"><input class="form-control form-control-sm" id="yktxt" type="password" placeholder="you know" aria-label="you know"></div>
+            </div>
+            <div class="row" id="imgThumbs">
+          
+            </div>
+            <div class="row" id="imgInfo">
+              <div class="col">
+              <br>
+              <img src="site/static/img/heart-fill.svg"></img><br>
+              </div>
+            </div>
+            <div class="row" id="imgWindow"></div>
+          </div>
           </div>
         </div>   
       </div>
     </div>
     <script src="site/static/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="site/static/js/headergen.js"></script>
+    <script src="site/static/js/SimpleCrypto.min.js"></script>
     <script src="site/static/js/gall.js"></script>
   </body>
 </html>
