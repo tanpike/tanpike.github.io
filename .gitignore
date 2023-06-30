@@ -3,6 +3,7 @@
 
 #local environment
 local/
+local/*
 
 # Bundler cache
 .bundle
