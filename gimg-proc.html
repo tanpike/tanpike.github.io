@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="site/static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="site/static/css/gimg-proc.css">
+  <title>drag n drop</title>
+  </head>
+  <body>
+    <div class="container" id="navtainer">
+    </div>
+    <br><br><br>
+    <div class="container">
+      <div class="bs-component" id="mainb">
+        <div class="row">
+          <div class="col-lg-8 col-md-7 col-sm-6">
+            <h1>Gall</h1>
+            <p class="lead">proc images</p>
+          </div>
+          <div class="container" id="innerc">
+            <div id="drop_zone" ondrop="dropHandler(event);">
+              <p>Drag one or more files to this <i>drop zone</i>.</p>
+            </div>
+            <div class="row" id="imgInfo">
+              <div class="col">
+              <br>
+              <img src="site/static/img/heart-fill.svg"></img><br>
+              </div>
+            </div>
+            <div class="row" id="imgWindow"></div>
+          </div>
+          </div>
+        </div>   
+      </div>
+    </div>
+    <script src="site/static/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="site/static/js/SimpleCrypto.min.js"></script>
+    <script src="local/env.js"></script>
+    <script src="site/static/js/headergen.js"></script>
+    <script src="site/static/js/gimg-proc.js"></script>
+  </body>
+</html>
+
