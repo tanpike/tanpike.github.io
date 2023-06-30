@@ -1,0 +1,71 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+
+Table images {
+  id integer [primary key]
+  imgURI varchar
+  thumbURI varchar
+  imgURLId integer
+  modelId integer
+  creatorId integer
+  studioId integer
+  tagId integer 
+  isNSFW integer
+}
+
+Table imgURL {
+  id integer [primary key]
+  imgURLenc varchar
+}
+
+Table tag {
+  id integer [primary key]
+  tag varchar
+}
+
+Table model {
+  id integer [primary key]
+  modelName varchar
+}
+
+Table creator {
+  id integer [primary key]
+  CreatorName varchar
+}
+
+Table studio {
+  id integer [primary key]
+  studioName varchar
+}
+
+Table modelImage {
+  modelId integer
+  imgId integer
+}
+
+Table createorImage {
+  creatorId integer
+  imgId integer
+}
+
+Table tagImage {
+  tagId integer
+  imgId integer
+}
+
+Table studioImage {
+  studioId integer
+  imgId integer
+}
+
+Ref: images.imgURLId < imgURL.id
+Ref: images.creatorId < creator.id
+Ref: images.studioId < studio.id
+Ref: images.modelId < model.id
+
+Ref: images.id > modelImage.imgId
+Ref: images.id > tagImage.imgId
+Ref: model.id > modelImage.modelId
+Ref: tag.id > tagImage.tagId
+
