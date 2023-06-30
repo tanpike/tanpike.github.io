@@ -30,7 +30,7 @@ function parseRez(rezstr){
   rezstr = rezstr.replaceAll("(","<tr><td>");
   rezstr = rezstr.replaceAll(")","</td></tr>");
   rezstr = rezstr.replaceAll(",","</td><td>");
-  oustr = "<table><thead><tr><td scope='col'>id</td><td scope='col'>text</td><td scope='col'>type</td><td scope='col'>wid</td><td scope='col'>hig</td><td scope='col'>size</td><td scope='col'>fav</td></tr></thead>"
+  oustr = "<table><thead><tr><td scope='col'>id</td><td scope='col'>txt</td><td scope='col'>type</td><td scope='col'>wid</td><td scope='col'>hig</td><td scope='col'>size</td><td scope='col'>fav</td></tr></thead>"
   oustr = oustr + "<tbody>";
   oustr = oustr + rezstr;
   oustr = oustr + "</tbody></table>";
