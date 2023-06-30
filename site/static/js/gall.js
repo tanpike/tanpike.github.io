@@ -5,7 +5,7 @@ function gimmeFive(){
   picurlstart = simpleCrypto.decrypt("d094e410adce78d1b47f5085b6b3df505cdeb771a570bcda6c281ce0bf2003f0Hap0Vdau0E1y3uPhAPVVCfsVt4/Ef17VjtnzZE5atSqeVwNf6sCbo8QVvT5+mlp+2455eca59824cc563881fd7384edec7c14079e590ed96133eaa6fe79ca960e11");
   imgThumbs.innerHTML = '<div class="spinner-border" role="status"><span class="visually-hidden">Waking up repl...</span></div>';
   imgWindow.innerHTML = '';
-  fetch('https://gall.tanpike.repl.co/randFive', {method:"POST"})
+  fetch(backendURL + '/randFive', {method:"POST"})
     .then(response => response.text())
     .then(body => {
           moustr = gallRez(body);
@@ -15,7 +15,7 @@ function gimmeFive(){
 
 function getFaves(){
   imgWindow.innerHTML = '';
-  fetch('https://gall.tanpike.repl.co/getFaves', {method:"POST"})
+  fetch(backendURL + '/getFaves', {method:"POST"})
     .then(response => response.text())
     .then(body => {
           moustr = gallRez(body);
