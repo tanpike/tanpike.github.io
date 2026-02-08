@@ -16,7 +16,7 @@ myHeader = `
                   <a class="dropdown-item" href="index.html">home</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="gall.html">gall</a>
-                  <a class="dropdown-item" href="stprx">stprx</a>
+                  <a class="dropdown-item" href="blog/archive">blog</a>
                 </div>
               </li>
             </ul>
