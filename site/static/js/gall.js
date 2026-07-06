@@ -2,7 +2,8 @@ var simpleCrypto;
 var picurlstart;
 
 function gimmeFive(){
-  picurlstart = simpleCrypto.decrypt("d094e410adce78d1b47f5085b6b3df505cdeb771a570bcda6c281ce0bf2003f0Hap0Vdau0E1y3uPhAPVVCfsVt4/Ef17VjtnzZE5atSqeVwNf6sCbo8QVvT5+mlp+2455eca59824cc563881fd7384edec7c14079e590ed96133eaa6fe79ca960e11");
+  // picurlstart = simpleCrypto.decrypt("d094e410adce78d1b47f5085b6b3df505cdeb771a570bcda6c281ce0bf2003f0Hap0Vdau0E1y3uPhAPVVCfsVt4/Ef17VjtnzZE5atSqeVwNf6sCbo8QVvT5+mlp+2455eca59824cc563881fd7384edec7c14079e590ed96133eaa6fe79ca960e11");
+  picurlstart = "828752ab-e444-452b-b031-dbbb6ed20c47-00-1x6il4kqn2zum.kirk.replit.dev"
   imgThumbs.innerHTML = '<div class="spinner-border" role="status"><span class="visually-hidden">Waking up repl...</span></div>';
   imgWindow.innerHTML = '';
   fetch(backendURL + '/randFive', {method:"POST"})
