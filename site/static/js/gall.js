@@ -6,7 +6,7 @@ function gimmeFive(){
   picurlstart = "https://828752ab-e444-452b-b031-dbbb6ed20c47-00-1x6il4kqn2zum.kirk.replit.dev"
   imgThumbs.innerHTML = '<div class="spinner-border" role="status"><span class="visually-hidden">Waking up repl...</span></div>';
   imgWindow.innerHTML = '';
-  fetch(backendURL + '/randFive', {method:"POST"})
+  fetch(backendURL + '/randFive', {method:"GET"})
     .then(response => response.text())
     .then(body => {
           moustr = gallRez(body);
